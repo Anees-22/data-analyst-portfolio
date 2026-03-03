@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mohammad Anees | Data Analyst</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<section class="hero">
+  <h1>Mohammad Anees</h1>
+  <h2><span id="typing"></span></h2>
+  <button onclick="scrollToSection('projects')">Explore My Work ↓</button>
+</section>
+
+<section class="skills reveal">
+  <h2>Technical Skills</h2>
+
+  <div class="skill-box">
+    <span>Python</span>
+    <div class="bar"><div class="fill" data-percent="90"></div></div>
+  </div>
+
+  <div class="skill-box">
+    <span>SQL</span>
+    <div class="bar"><div class="fill" data-percent="85"></div></div>
+  </div>
+
+  <div class="skill-box">
+    <span>Power BI</span>
+    <div class="bar"><div class="fill" data-percent="80"></div></div>
+  </div>
+
+</section>
+
+<section id="projects" class="projects reveal">
+  <h2>Projects</h2>
+
+  <div class="card" onclick="openModal('modal1')">
+    Sales Data Dashboard
+  </div>
+
+  <div class="card" onclick="openModal('modal2')">
+    Customer Segmentation Model
+  </div>
+</section>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('modal1')" class="close">&times;</span>
+    <h3>Sales Dashboard</h3>
+    <p>Built interactive dashboard using Power BI to analyze KPIs.</p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('modal2')" class="close">&times;</span>
+    <h3>Customer Segmentation</h3>
+    <p>Used Python clustering to segment customers.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
